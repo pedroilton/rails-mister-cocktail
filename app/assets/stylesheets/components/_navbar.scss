@@ -1,19 +1,19 @@
 .navbar-lewagon {
   justify-content: space-between;
-  // background: #E56399;
+  // background: $pink;
   background: $gray;
   opacity: .7;
-  color: #E56399;
+  color: $pink;
 }
 
 .navbar-lewagon .btn-info {
-  // color: #E56399;
+  // color: $pink;
   background-color: $gray;
-  color: #E56399;
-  border-color: #E56399;
+  color: $pink;
+  border-color: $pink;
   &:hover {
-    // color:  #cc3272;
-    color:#cc3272;
+    // color:  $dark-pink;
+    color:$dark-pink;
   }
 }
 
@@ -29,8 +29,8 @@
   font-size: 40px;
   font-family: 'Kaushan Script', cursive;
   // color: $orange;
-  color: #cc3272;
+  color: $dark-pink;
   &:hover {
-    color: #E56399;
+    color: $pink;
   }
 }

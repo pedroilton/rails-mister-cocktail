@@ -1,10 +1,10 @@
 .footer {
-  // background: #E56399;
+  // background: $pink;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100px;
-  // position: absolute;
+  // position: fixed;
   margin-top: 20px;
   bottom: 0;
   width: 100%;
@@ -12,7 +12,7 @@
   // color: rgba(0,0,0,1);
   // background: rgba(0,0,0,1);
   background: $gray;
-  color: #E56399;
+  color: $pink;
 }
 .footer-links {
   display: flex;
@@ -20,8 +20,8 @@
   width: 400px;
 }
 .footer-links a {
-  color: black;
-  color: #cc3272;
+  color: $gray;
+  color: $dark-pink;
   opacity: 1;
   text-decoration: none;
   font-size: 24px;
@@ -29,5 +29,5 @@
 }
 .footer-links a:hover {
   // opacity: .3;
-  color: #E56399;
+  color: $pink;
 }
