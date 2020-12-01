@@ -1,0 +1,36 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  // background: #E56399;
+  background: $gray;
+  opacity: .7;
+  color: #E56399;
+}
+
+.navbar-lewagon .btn-info {
+  // color: #E56399;
+  background-color: $gray;
+  color: #E56399;
+  border-color: #E56399;
+  &:hover {
+    // color:  #cc3272;
+    color:#cc3272;
+  }
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  font-family: 'Kaushan Script', cursive;
+  // color: $orange;
+  color: #cc3272;
+  &:hover {
+    color: #E56399;
+  }
+}

@@ -1,0 +1,27 @@
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#notice {
+  color: $yellow;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 5px auto;
+  width: 50%;
+}
+ul a {
+  text-decoration: none;
+  color: $dark-orange
+}
+
+ul a:hover {
+  text-decoration: none;
+  color: $orange;
+}
+
+li {
+  list-style-type: none;
+  font-size: 24px;
+}

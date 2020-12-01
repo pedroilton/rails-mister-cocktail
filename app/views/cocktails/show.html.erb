@@ -1,0 +1,16 @@
+<div class="container">
+  <h1><%= @cocktail.name %></h1>
+  <ul>
+    <% @cocktail.doses.each do |dose| %>
+      <li><%= dose.description %> of <%= dose.ingredient.name %>  <%= link_to '', dose_path(dose), { method: :delete, class: "fas fa-trash-alt" } %></li>
+    <% end %>
+  </ul>
+  <br>
+  <h4>Add a new dose:</h4>
+  <p id="notice"><%= notice %></p>
+  <%= simple_form_for [ @cocktail, @dose ] do |f| %>
+    <%= f.input :description %>
+    <%= f.association :ingredient %>
+    <%= f.submit "Add dose", class: "btn btn-orange" %>
+  <% end %>
+</div>
