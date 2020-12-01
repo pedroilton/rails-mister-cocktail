@@ -1,7 +1,11 @@
+<% provide(:title, 'New Cocktail') %>
+
 <div class="container">
   <h1>New Cocktail</h1>
   <%= simple_form_for(@cocktail) do |f| %>
     <%= f.input :name %>
-    <%= f.submit "Submit cocktail", class: "btn btn-orange" %>
+      <%= f.input :photo, as: :file, class: "btn btn-orange", id: "upload" %>
+    <br>
+    <%= f.submit "Submit cocktail", class: "btn btn-orange center" %>
   <% end %>
 </div>

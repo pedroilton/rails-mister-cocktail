@@ -12,7 +12,7 @@
 
 h1 {
   font-size: 80px;
-  margin: 5px auto;
+  margin: 5px auto 50px auto;
   width: 50%;
 }
 ul a {
@@ -28,4 +28,17 @@ ul a:hover {
 li {
   list-style-type: none;
   font-size: 24px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -4,9 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100px;
-  // position: fixed;
-  margin-top: 20px;
-  bottom: 0;
+  margin-top: 50px;
   width: 100%;
   padding: 0px 50px;
   // color: rgba(0,0,0,1);
@@ -30,4 +28,10 @@
 .footer-links a:hover {
   // opacity: .3;
   color: $pink;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  // margin-top: 500px;
 }

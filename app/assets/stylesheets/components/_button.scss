@@ -9,3 +9,26 @@
   border-color: $orange;
   color: $purple;
 }
+
+#file-upload-button {
+  background-color: $dark-orange!important;
+  border-color: $dark-orange!important;
+  color: $purple!important;
+}
+
+#upload {
+  background-color: $dark-orange!important;
+  border-color: $dark-orange!important;
+  color: $purple!important;
+}
+
+// input[type='file'] {
+//   // display: none
+//   background-color: $dark-orange!important;
+//   border-color: $dark-orange!important;
+//   color: $purple!important;
+// }
+
+#cocktail_photo {
+  color: $yellow;
+}

@@ -1,13 +1,21 @@
 <div class="container">
   <h1>Cocktails</h1>
-  <div class="card-list">
+  <div class="row">
     <% @cocktails.each do |cocktail| %>
-      <%= link_to cocktail, { class: "card-category col-4 m-3", style: "background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), asset-url(cuba-libre.jpg)" } do %>
-        <%# <div style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)"> %>
-          <%= cocktail.name %>
-        <%# </div> %>
-      <% end %>
+      <div class="col-12 col-md-6 col-lg-4">
+      <%# 'https://res.cloudinary.com/pedroilton/image/upload/v1606841271/clrqysgdw9neywbjpzoe.jpg' %>
+      <%#= cocktail.photo.attached? cl_image_path(cocktail.photo.key) : 'https://res.cloudinary.com/pedroilton/image/upload/v1606841271/clrqysgdw9neywbjpzoe.jpg' %>
+        <% if cocktail.photo.attached? %>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo.key %>');">
+        <% else %>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://res.cloudinary.com/pedroilton/image/upload/v1606841271/clrqysgdw9neywbjpzoe.jpg');">
+        <% end %>
+          <div class="card-description">
+            <h2><%= cocktail.name %></h2>
+          </div>
+          <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+        </div>
+      </div>
     <% end %>
   </div>
 </div>
-

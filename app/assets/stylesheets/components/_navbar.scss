@@ -27,10 +27,10 @@
 
 .navbar-brand {
   font-size: 40px;
-  font-family: 'Kaushan Script', cursive;
+  font-family: $headers-font;
   // color: $orange;
-  color: $dark-pink;
+  color: $pink;
   &:hover {
-    color: $pink;
+    color: $dark-pink;
   }
 }
